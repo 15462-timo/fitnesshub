@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness hub</title>
+    <!-- css surporting -->
+    <link rel="stylesheet" href="../static/files/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/files/css/lightslider.css">
+    <link rel="stylesheet" href="../static/files/css/style.css">
+    <link rel="stylesheet" href="../static/files/css/style1d.css">
+    <link rel="stylesheet" href="../static/files/css/">
+    <link rel="stylesheet" href="../static/files/css/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/files/css/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- js supporting -->
+    
+    <script src="../static/files/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/files/js/jquery.js"></script>
+    <script src="../static/files/js/lightslider.js"></script>
+    <script src="../static/files/js/script.js"></script>
+    <script src="../static/files/css/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script>
+        $('.classes-slider').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+    </script>
+
+</head>
+<body style="background-color: black;">
+    <div class="container_fluid">
+        {% include 'navbar.html' %}
+        <br>
+        {% include 'carousel.html' %}
+    </div>
+    <hr>
+    <br><br>
+    <section class="about-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-pic">
+                        <img src="../static/files/about-pic.jpg.webp" alt="about">
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <h2 style="color: white;">About Us</h2>
+                        <p class="para">Fitness hub helps promote healthy living in our world today as the world is swiftly being carried away by technology.Therefore Fitness hub comes in to incorporate this technology in our daily routines and help us keep fit.</p>
+                        <a href="/aboutus" class="primary-btn">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section> 
+    <br><br>
+    <hr>
+    <section class="services-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="services-pic">
+                        <img src="../static/files/service-pic.jpg.webp" alt="services-pic">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-items">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="services-item bg-gray">
+                                    <img src="../static/files/icon1.png" alt="service-icon1">
+                                    <h4 style="color: white;">Strategies</h4>
+                                    <p>Ditch the dreadmill drudgery! Unleash your inner athlete and discover the fun side of fitness. No more gym intimidation, just a world of energy, strength, and confidence waiting to be unlocked. Let's make getting fit an adventure, not a chore.</p>
+                                </div>
+                                <div class="services-item bg-gray pd-b">
+                                    <img src="../static/files/icon2.png" alt="service-icon3">
+                                    <h4 style="color: white;">Workout</h4>
+                                    <p>sculpt your dream physique now! Unleash your inner power with a sweat session that'll leave you energized, not exhausted. No fancy equipment needed – transform your living room into a fitness zone and feel the endorphins pumping. Let's turn those excuses into results, one workout at a time!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="services-item">
+                                    <img src="../static/files/icon3.png" alt="service-icon2">
+                                    <h4 style="color: white;">Yoga</h4>
+                                    <p>Unroll your mat, not your stress ball! Yoga is more than just fancy poses. It's a mind-body powerhouse that sculpts your physique, calms your inner storm, and leaves you feeling energized and centered. Ready to bend, breathe, and discover a stronger, happier you?</p>
+                                </div>
+                                <div class="services-item pd-b">
+                                    <img src="../static/files/icon4.png" alt="service-icon4">
+                                    <h4 style="color: white;">Weight Loss</h4>
+                                    <p>Ditch the fad diets and boring routines! Torch calories, sculpt your dream bod, and feel amazing from the inside out. Our workouts are designed to be quick, effective, and most importantly, FUN. Let's turn weight loss into a celebration of your strength and potential!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <hr>
+    <!-- classes section start -->
+    <section class="classes-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span style="color: white;">Our Classes</span>
+                        <h2 style="color: white;">WHAT WE CAN OFFER</h2>
+                    </div>
+                </div>
+            </div>
+            <section class="row text-center">
+                <div class="col-md-3 card shadow p-5" style="background-color: rgb(247, 245, 245);">
+                    <div class="class-item">
+                        <div class="ci-pic">
+                            <img src="../static/files/class3.jpg" alt="">
+                        </div>
+                        <div class="ci-text">
+                            <span class="1" style="color: white;">STRENGTH</span>
+                            <h5 class="2" style="color: white;">Dance</h5>
+                            <a href="classes">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 card shadow p-5" style="background-color: rgb(247, 245, 245);">
+                    <div class="class-item">
+                        <div class="ci-pic">
+                            <img src="../static/files/class-2a.jpg" alt="">
+                        </div>
+                        <div class="ci-text">
+                            <span class="1" style="color: white;">CARDIO</span>
+                            <h5 class="2" style="color: white;">Yoga</h5>
+                            <a href="/classes">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 card shadow p-5" style="background-color: rgb(247, 245, 245);">
+                    <div class="class-item">
+                        <div class="ci-pic">
+                            <img src="../static/files/class-3a.jpg" alt="">
+                        </div>
+                        <div class="ci-text">
+                            <span class="1" style="color: white;">CARDIO</span>
+                            <h5 class="2" style="color: white;">Indoor Exercises</h5>
+                            <a href="/classes">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 card shadow p-5" style="background-color: rgb(247, 245, 245);">
+                    <div class="class-item">
+                        <div class="ci-pic">
+                            <img src="../static/files/class-4a.jpg" alt="">
+                        </div>
+                        <div class="ci-text">
+                            <span class="1" style="color: white;">STRENGHT</span>
+                            <h5 class="2" style="color: white;">Weightlifting</h5>
+                            <a href="/classes">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>  
+    </section>
+    <br><br>
+    <hr>
+    <section class="banner-img banner-section set-bg" data-setbg="../static/files/banner-bg1.jpg" style="background-image: url(../static/files/banner-bg1.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="banner-text">
+                        <h2>Get Training Today</h2>
+                        <p>Feeling stuck in a fitness rut?  Upgrade your energy levels, unleash your inner powerhouse, and unlock a body that feels amazing!  Fitness training isn't just about punishment, it's about unlocking a stronger, more confident you.  Let's ditch the guesswork and get you on the fast track to results you'll love. All aviailable in Fitness Hub, register now</p>
+                        <a href="contactus" class="primary-btn banner-btn">
+                            Contact Now
+                        </a>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="../static/files/banner-person.png.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <hr>
+    <section class="membership-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2 style="color: white;">MEMBERSHIP PLANS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="membership-item">
+                        <div class="mi-title">
+                            <h4>Basic</h4>
+                            <div class="triangle"></div>
+                        </div>
+                        <h2 class="mi-price">
+                            KSH 2500
+                            <span>/month</span>
+                        </h2>
+                        <ul>
+                            <li>
+                                <p>Duration</p>
+                                <span>12 months</span>
+                            </li>
+                            <li>
+                                <p>Personal trainer</p>
+                                <span>00 person</span>
+                            </li>
+                            <li>
+                                <p>Amount of people</p>
+                                <span>01 person</span>
+                            </li>
+                            <li>
+                                <p>Number of visits</p>
+                                <span>Unlimited</span>
+                            </li>
+                        </ul>
+                        <a href="/signup" class="primary-btn membership-btn">
+                            Start Now
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="membership-item">
+                        <div class="mi-title">
+                            <h4>Standard</h4>
+                            <div class="triangle"></div>
+                        </div>
+                        <h2 class="mi-price">
+                            KSH 5000
+                            <span>/month</span>
+                        </h2>
+                        <ul>
+                            <li>
+                                <p>Duration</p>
+                                <span>12 months</span>
+                            </li>
+                            <li>
+                                <p>Personal trainer</p>
+                                <span>00 person</span>
+                            </li>
+                            <li>
+                                <p>Amount of people</p>
+                                <span>01 person</span>
+                            </li>
+                            <li>
+                                <p>Number of visits</p>
+                                <span>Unlimited</span>
+                            </li>
+                        </ul>
+                        <a href="/signup" class="primary-btn membership-btn">
+                            Start Now
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="membership-item">
+                        <div class="mi-title">
+                            <h4>Premium</h4>
+                            <div class="triangle"></div>
+                        </div>
+                        <h2 class="mi-price">
+                            KSH 10000
+                            <span>/month</span>
+                        </h2>
+                        <ul>
+                            <li>
+                                <p>Duration</p>
+                                <span>12 months</span>
+                            </li>
+                            <li>
+                                <p>Personal trainer</p>
+                                <span>00 person</span>
+                            </li>
+                            <li>
+                                <p>Amount of people</p>
+                                <span>01 person</span>
+                            </li>
+                            <li>
+                                <p>Number of visits</p>
+                                <span>Unlimited</span>
+                            </li>
+                        </ul>
+                        <a href="/signup" class="primary-btn membership-btn">
+                            Start Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <hr>
+    <section class="footer-banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer-banner-item set-bg" data-setbg="../static/files/footer-banner-1.jpg.webp" style="background-image: url(../static/files/footer-banner-1.jpg.webp);">
+                        <span>New member</span>
+                        <h2>7 days for free</h2>
+                        <p>Complete the Training sessions with us,surely you will be happy</p>
+                        <a href="/signup" class="primary-btn">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer-banner-item set-bg" data-setbg="../static/files/footer-banner-2.jpg.webp" style="background-image: url(../static/files/footer-banner-2.jpg.webp);">
+                        <span>Contact Us</span>
+                        <h2>+254 723 323 971</h2>
+                        <p>Incase of more info just contact us, let's all promote healthy living</p>
+                        <a href="/signup" class="primary-btn">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-option">
+                        <span>Phone</span>
+                        <p>+254 723 323 971 - +254 786 315 008</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-option">
+                        <span>Address</span>
+                        <p>47 Nairobi, 105 Bazzar Plaza Suite 11</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-option">
+                        <span>Email</span>
+                        <p>Contact kipkoechtimothy721@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe-option set-bg" data-setbg="../static/files/footer-signup.jpg.webp" style="background-image: url(../static/files/footer-signup.jpg.webp);">
+                <div class="so-text">
+                    <h4>Subscribe to our mailing list</h4>
+                    <p>Sign up for healthy living through our fitness programs</p>
+                </div>
+                <form action="#" class="subscribe-form">
+                    <input type="text" placeholder="Email">
+                    <button type="submit">
+                        <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+            <section class="row">
+                <div class="copyright-text">
+                    <ul>
+                        <li>
+                            <a href="#">Terms&Use</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                    <p></p>
+                    <div class="footer-social" style="right: 200%;">
+                        <a href="facebook.com">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="twitter.com">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="instagram.com">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </section>
+            
+    </footer>
+</body>
+</html>
